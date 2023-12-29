@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from './Component/Navbar/Navbar';
+import Homepage from './Pages/Homepage/Homepage';
+import Login from './Pages/Login/Login';
+import InfoPage from './Pages/InfoPage/InfoPage';
+import Selection from './Pages/InfoPage/Selection';
+import Summary from './Pages/InfoPage/Summary';
+import { BrowserRouter,Route,Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Homepage/>} />
+        <Route path="/tubewell" element={<Selection/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/tubellinfo" element={<InfoPage/>} />
+        <Route path="/summary" element={<Summary/>} />
+        
+      </Routes>
+    </BrowserRouter>
+   
   );
 }
 
 export default App;
+
+
