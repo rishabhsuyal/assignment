@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebar from '../../Component/SideBar/Sidebar'
 
 function InfoPage() {
   return (
@@ -19,9 +18,9 @@ function InfoPage() {
         </div>
       </div>
       <div className='flex p-10 gap-4'>
-        <img className='w-[250px] h-[250px]' src='https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-11/tubewell.jpg?itok=QrKB9_ye'/>
-        <img className="w-[250px] h-[250px]" src='https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-11/tubewell.jpg?itok=QrKB9_ye'/>
-        <img className="w-[250px] h-[250px]" src='https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-11/tubewell.jpg?itok=QrKB9_ye'/>
+        <img className='w-[250px] h-[250px]' src='https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-11/tubewell.jpg?itok=QrKB9_ye' alt='..'/>
+        <img className="w-[250px] h-[250px]" src='https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-11/tubewell.jpg?itok=QrKB9_ye' alt='..'/>
+        <img className="w-[250px] h-[250px]" src='https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2022-11/tubewell.jpg?itok=QrKB9_ye' alt='..'/>
       </div>
 
 
