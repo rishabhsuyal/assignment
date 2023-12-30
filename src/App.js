@@ -13,8 +13,8 @@ function App() {
         <Route path="/" element={<Homepage/>} />
         <Route path="/tubewell" element={<Selection/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/tubellinfo" element={<InfoPage/>} />
-        <Route path="/summary" element={<Summary/>} />
+        <Route path=":zone/:stw" element={<InfoPage/>} />
+        <Route path=":zone/summary" element={<Summary/>} />
         
       </Routes>
     </BrowserRouter>

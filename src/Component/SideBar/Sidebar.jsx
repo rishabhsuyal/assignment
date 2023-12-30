@@ -9,13 +9,10 @@ function Sidebar({heading, data}) {
                 {heading}
             </div>
             <ul className='bg-blue-200 '>
-            <li onClick={()=>navigate('/summary')} className='border-2 p-2 hover:bg-blue-300'>Summary</li>
+            <li onClick={()=>navigate(`/${heading}/summary`)} className='border-2 p-2 hover:bg-blue-300'>Summary</li>
                 {
-                    data.map(item=><li onClick={()=>navigate('/tubellinfo')} className='border-2 p-2 hover:bg-blue-300'>{item}</li>)
+                    data.map(item=><li onClick={()=>navigate(`/${heading}/${item}`)} className='border-2 p-2 hover:bg-blue-300'>{item}</li>)
                 }
-                {/* <li className='border-2 p-2'>STW 1</li>
-                <li className='border-2 p-2'>STW 1</li>
-                <li className='border-2 p-2'>STW 1</li> */}
             </ul>
 
         </div>

@@ -18,20 +18,15 @@ function Navbar() {
         <nav className='mb-5'>
             <div className='bg-gray-100 flex justify-between font-mono p-1'>
                 <h2 className=''>{weekday[day]}, {months[month]} {date}, 2023 </h2>
-                <div className='flex gap-2'>
-                    <h2 className='font-bold'><Link to="/">Home</Link></h2>
-                </div>
-
+                <h2 className='font-bold'><Link to="/">Home</Link></h2>
                 
-                <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300  rounded-lg text-sm px-5 py-2  dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300  rounded-lg text-sm px-2  dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
                 <Link to="/login">Login</Link>
                 </button>
-                  
-                
             </div>
             <div className='flex justify-between items-center mx-4 mt-6'>
-                <div>
-                    <img alt='idup_logo' src={Logo} />
+                <div className=' w-full'>
+                    <img className='w-1/3' alt='idup_logo' src={Logo} />
                 </div>
             </div>
 
